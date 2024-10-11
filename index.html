@@ -1,9 +1,110 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="pratice.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>BURGER</title>
+</head>
 <body>
-  <h1>SEVER TESTING</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <div class="overlay">
+    <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie Burger logo" id="logo">
+    <hr>
+        <form>
+            <h1>Create a burger!</h1>
+            <section class="protein"> <!-- TYPE TEXT-->
+                <label for="cal">What type of protein would you like?</label>
+                <input type="text" id="cal" name="cals" placeholder="animal--plant--dairy">
+            </section>
+            <section class="buntype">     <!-- TYPE NUMBER-->
+                <hr>
+                <label for="patty">How many patties would you like:</label>
+                <input type="number" id="patty" name="num of bun">
+            </section>
+            <section class="range">   <!--TYPE RANGE-->
+                <hr>
+                <label for="meatrange">How do you want your patty cocked!</label>
+                <br>
+                <span>Rare</span>
+                <input type="range" id="meatrange" max="6" step="1">
+                <span>Well-done</span>
+                </span>
+            </section> 
+            <section class="topping"> <!-- TYPE CHECKBOX-->
+                <hr>
+                <legend>What toppings would you like?</legend>
+                <!---->
+                <input type="checkbox" id="lettuce" name="topping" value="">
+                <label for="lettuce">Lettuce</label>
+                <!---->
+                <input type="checkbox" id="tomato" name="topping" value="">
+                <label for="tomato">Tomato</label>
+                <!---->
+                <input type="checkbox" id="onion" name="topping" value="">
+                <label for="onion">Onion</label>
+            </section>
+            <section class="cheese">
+                <hr>
+                <legend>Would you like to add cheese?</legend>
+                <input type="radio" id="yes" name="yes">
+                <label for="yes">Yes</label>
+                <!--Space-->
+                <input type="radio" id="no" name="no">
+                <label for="no">No</label>
+            </section> 
+            <section>
+                <label for="bun">What type of bun would you like?</label>
+                <select id="bun" name="bun">
+                    <option value="sesame">Sesame</option>
+                    <option value="regular">Regular</option>
+                    <option value="funtype">Fun-tyoe</option>
+                </select>
+            </section>
+            <section>
+                <hr>
+                <label for="sauce">What type of sauce would you like?</label>
+                <input type="text" id="sauce" list="sauces" name="sauce">
+                <datalist id="sauces">
+                    <option value="Mayo"></option>
+                    <option value="ketchup"></option>
+                    <option value="Sweet-Chilli"></option>
+                    <option value="Garlic-Sauce"></option>
+                </datalist>
+            </section>
+            <section>
+                <hr>
+                <label for="extra-info">Anything else you want to add?</label>
+                <br>
+                <textarea id="extra-info" rows="3" cols="40"></textarea>
+            </section>
+            <section>   <!--LOCATION-->
+                <hr>
+                <label for="phone">Enter your Phone Number:</label>
+                <input type="text" id="phone" name="phone" placeholder="phone number" required>
+            </section>
+            <section class="city">   <!--LOCATION-->
+                <hr>
+                <label for="city">Delivery Location:</label>
+                <select id="city" id="city" name="cities">
+                    <option value="phnomPenh">PhnomPenh</option>
+                    <option value="battambang">Battambang</option>
+                    <option value="kandal">Kandal</option>
+                    <option value="ta-kmav">Ta-kmav</option>
+                </select>          
 
+            </section>
+            <section class="submit-form">
+                <hr>
+                <input type="submit" id="submit-form" value="Submit Here!">
+            </section>
+
+
+        </form>
+    </div>
+        
+    
+</body>
 </html>
