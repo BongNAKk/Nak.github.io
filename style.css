@@ -1,1 +1,57 @@
+img {
+    width:500px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -10px;
+}
+
+
+body {
+    background-color: rgba(160, 160, 177, 0.599);
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(224, 243, 243, 0.904);
+    border-radius: 45px;
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+    margin: 50px auto;
+}
+
+form {
+    text-align: center;
+    line-height: 30px;
+}
+
+form hr {
+    width: 15%;   
+}
+
+.topping label {
+    margin-right: 20px;
+}
+
+.cheese label {
+    margin-right: 20px;
+}
+
+.city label {
+    position: relative;
+    left: -4px;
+}
+
+.submit-form input {
+    padding: 8px;
+    font-size:large;
+    background-color: rgba(223, 218, 210, 0.5);
+
+}
+
 
